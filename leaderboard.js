@@ -1,12 +1,1 @@
-leaderboard = ''
-getTopPlayers();
-
-//get top 25 users
-function getTopPlayers(){
-    db.collection('users-score').orderBy('Score', 'desc').limit(25).get().then(query =>{
-        query.forEach(doc => {
-            leaderboard += `Name: ${doc.data().Name}, Score: ${doc.data().Score} \n`
-        });
-        document.getElementById('top-players').innerText = leaderboard
-    })
-}
+var _0x5e38=['Score','9Vqhmzq','34229FDiEYR','202564qSNRoj','innerText','1iJPsdN','608203SxTEyu','Name:\x20','desc','get','895082DFDRjk','then','256301qetPDN','forEach','data','orderBy','60056YqZagx','206168ZlSWAw','top-players','users-score','Name','limit','23WwaVSs'];var _0x3d31=function(_0x7ebf3e,_0x3928e9){_0x7ebf3e=_0x7ebf3e-0xb5;var _0x5e3899=_0x5e38[_0x7ebf3e];return _0x5e3899;};(function(_0x1fce75,_0x55e2a5){var _0x1308c5=_0x3d31;while(!![]){try{var _0x303e86=-parseInt(_0x1308c5(0xb7))*-parseInt(_0x1308c5(0xcb))+parseInt(_0x1308c5(0xb8))+-parseInt(_0x1308c5(0xbb))+parseInt(_0x1308c5(0xc1))+-parseInt(_0x1308c5(0xbf))+parseInt(_0x1308c5(0xb6))*parseInt(_0x1308c5(0xc5))+-parseInt(_0x1308c5(0xc6))*-parseInt(_0x1308c5(0xba));if(_0x303e86===_0x55e2a5)break;else _0x1fce75['push'](_0x1fce75['shift']());}catch(_0x27000a){_0x1fce75['push'](_0x1fce75['shift']());}}}(_0x5e38,0x7782f),leaderboard='',getTopPlayers());function getTopPlayers(){var _0x276306=_0x3d31;db['collection'](_0x276306(0xc8))[_0x276306(0xc4)](_0x276306(0xb5),_0x276306(0xbd))[_0x276306(0xca)](0x19)[_0x276306(0xbe)]()[_0x276306(0xc0)](_0x16ccb2=>{var _0xb1837e=_0x276306;_0x16ccb2[_0xb1837e(0xc2)](_0x1a9790=>{var _0xddb935=_0xb1837e;leaderboard+=_0xddb935(0xbc)+_0x1a9790[_0xddb935(0xc3)]()[_0xddb935(0xc9)]+',\x20Score:\x20'+_0x1a9790[_0xddb935(0xc3)]()[_0xddb935(0xb5)]+'\x20\x0a';}),document['getElementById'](_0xb1837e(0xc7))[_0xb1837e(0xb9)]=leaderboard;});}
